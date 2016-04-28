@@ -1,6 +1,89 @@
 @import 'settings';
 @import 'foundation';
 
-.special {
-	background: blue;
+
+.divider-image {
+	padding: 1em 0;
+}
+.preheader {
+	p {
+		color: $dark-gray;
+		font-size: 9px;
+	}
+}
+
+/* Main header */
+.header {
+	h1, .tagline {
+		font-family: Palatino, "Times New Roman", serif;
+		margin-bottom: 0;
+		color: $black;
+	}
+	h1 {
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 48px;
+		text-transform: uppercase;
+
+		@media only screen and (max-width: #{$global-breakpoint}) {
+			font-size: 20px;
+			line-height: 20px;
+		}
+	}
+	.tagline {
+		font-size: 14px;
+		line-height: 14px;
+
+		@media only screen and (max-width: #{$global-breakpoint}) {
+			font-size: 10px;
+			line-height: 10px;
+		}
+	}
+}
+.barf {
+	// background: pink;
+}
+table.button table td a {
+	font-family: $header-font-family;
+}
+/* Featured Block styles */
+.featured-block {
+	background: $primary-color;
+		h1, h2, h3, h4, h5, h6, p, {
+			color: $white;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			font-weight: bold;
+		}
+		table.button.large table tr td {
+			background: $white;
+
+			a {
+				color: $primary-color;
+				font-size: 1.2rem;
+			}
+		}
+}
+
+/* Hero Image styles */
+.hero-image {
+	position: relative;
+	.container {
+	}
+	h1 {
+		position: absolute;
+		top: $body-line-height;
+		left: 1em;
+		color: $white;
+		font-weight: bold;
+	}
+}
+/* FOOTER STYLES */
+.footer {
+	background: $white;
+
+	p, a {
+		color: $dark-gray;
+		font-size: .8rem;
+	}
 }
