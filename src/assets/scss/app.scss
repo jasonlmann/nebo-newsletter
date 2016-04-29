@@ -15,7 +15,7 @@
 /* Main header */
 .header {
 	h1, .tagline {
-		font-family: Palatino, "Times New Roman", serif;
+		font-family: "Palatino", "Times New Roman", serif;
 		margin-bottom: 0;
 		color: $black;
 	}
@@ -26,29 +26,27 @@
 		text-transform: uppercase;
 
 		@media only screen and (max-width: #{$global-breakpoint}) {
-			font-size: 20px;
-			line-height: 20px;
+			font-size: 24px !important;
+			line-height: 24px !important;
 		}
 	}
+
 	.tagline {
 		font-size: 14px;
 		line-height: 14px;
-
-		@media only screen and (max-width: #{$global-breakpoint}) {
-			font-size: 10px;
-			line-height: 10px;
 		}
-	}
 }
-.barf {
-	// background: pink;
-}
-table.button table td a {
-	font-family: $header-font-family;
-}
+
+// table.button.large table tr td {
+// 	background: $primary-color;
+// 	a {
+// 		font-family: $header-font-family;
+// 	}
+// }
 /* Featured Block styles */
 .featured-block {
 	background: $primary-color;
+
 		h1, h2, h3, h4, h5, h6, p, {
 			color: $white;
 		}
@@ -60,7 +58,6 @@ table.button table td a {
 
 			a {
 				color: $primary-color;
-				font-size: 1.2rem;
 			}
 		}
 }
@@ -78,6 +75,7 @@ table.button table td a {
 		font-weight: bold;
 	}
 }
+
 /* FOOTER STYLES */
 .footer {
 	background: $white;
