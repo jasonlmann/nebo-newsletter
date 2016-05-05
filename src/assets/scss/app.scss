@@ -37,12 +37,11 @@
 		}
 }
 
-// table.button.large table tr td {
-// 	background: $primary-color;
-// 	a {
-// 		font-family: $header-font-family;
-// 	}
-// }
+.fineprint {
+	font-style: italic;
+	font-size: .8rem;
+}
+
 /* Featured Block styles */
 .featured-block {
 	background: $primary-color;
