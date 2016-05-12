@@ -64,14 +64,30 @@
 /* Hero Image styles */
 .hero-image {
 	position: relative;
+	.image-holder {
+		background-size: 580px 417px;
+		background-repeat: no-repeat;
+		background-position: left;
+		@media only screen and (max-width: #{$global-breakpoint}) {
+		}
+	}
 	.container {
 	}
+	.text-over-image td {
+		vertical-align:middle;
+		padding-right: $global-gutter;
+		@media only screen and (max-width: #{$global-breakpoint}) {
+			vertical-align: bottom;
+		}
+	}
 	h1 {
-		position: absolute;
-		top: $body-line-height;
-		left: 1em;
+		// position: absolute;
+		// top: $body-line-height;
+		// left: 1em;
 		color: $white;
 		font-weight: bold;
+		text-align: right;
+		padding-right: $global-gutter;
 	}
 }
 
