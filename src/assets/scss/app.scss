@@ -1,5 +1,5 @@
 @import 'settings';
-@import 'foundation';
+@import 'foundation-emails';
 
 
 .divider-image {
@@ -15,7 +15,7 @@
 /* Main header */
 .header {
 	h1, .tagline {
-		font-family: "Palatino", "Times New Roman", serif;
+		font-family: "Palatino", serif;
 		margin-bottom: 0;
 		color: $black;
 	}
@@ -71,7 +71,7 @@
 .hero-image {
 	position: relative;
 	.image-holder {
-		background-size: 580px 349px;
+		background-size: 580px 435px;
 		background-repeat: no-repeat;
 		background-position: left;
 		@media only screen and (max-width: #{$global-breakpoint}) {
@@ -95,6 +95,12 @@
 		text-align: right;
 		padding-right: $global-gutter;
 	}
+}
+.full-width {
+	width: 580px !important;
+}
+.logo {
+	width: 120px !important;
 }
 
 /* FOOTER STYLES */
