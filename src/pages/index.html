@@ -6,8 +6,7 @@ subject: Finally!
   <wrapper class="hero-image">
     <row class="collapse">
       <columns small="12">
-
-        <img src="{{root}}assets/img/still-water@2x.jpg" alt="A still morning on the Fox Islands Thorofare" class="full-width" width="580">
+        <img editable label="Hero image: 1160px wide." src="{{root}}assets/img/still-water@2x.jpg" alt="A still morning on the Fox Islands Thorofare" class="full-width" width="580">
       </columns>
     </row>
   </wrapper>
@@ -16,67 +15,93 @@ subject: Finally!
   <row class="">
     <columns>
       <spacer size="32"></spacer>
+        <repeater>
+          <h1><singleline label="Main headline">This is the main headline!</singleline></h1>
+        </repeater>
 
-      <p>Dear [firstname, fallback=Friend], we've got an amazing spring special at the inn: <strong>Book a weekend stay of at least two nights between June 1st and 24th and you’ll get 25% off.</strong></p>
-      <p>
-        <center>
-          <spacer size="16"></spacer>
-          <button class="large radius" href="https://www.nebolodge.com/rooms/">Book now!</button>
-        </center>
-      </p>
-
-
-
-      <p>June is just around the corner. The hiking trails and fields are bursting with green, lobstermen are starting to set their traps in the bay, and the first summer visitors have begun to arrive.</p>
-      <p>But it’s a peaceful time, too. The crowds of mid-summer have yet to arrive, and you can still find yourself strolling alone across our beautiful golf course, or riding in silence on the North Shore Road, with its spectacular views of Penobscot Bay and the Camden Hills.</p>
-
+        <multiline>
+          Dear [firstname, fallback=Friend], we've got an amazing spring special at the inn: <strong>Book a weekend stay of at least two nights between June 1st and 24th and you’ll get 25% off.</strong>
+        </multiline>
+        <repeater >
+          <p>
+            <center>
+              <spacer size="16"></spacer>
+              <button class="large radius" href="https://www.nebolodge.com/"><singleline>Book now!</singleline></button>
+            </center>
+          </p>
+        </repeater>
     </columns>
   </row>
 </container>
 <!-- end featured block -->
+<repeater>
+  <!-- Layout #1 -->
+  <layout label="Text - No image">
+    <container>
+      <row>
+        <columns small="12">
+          <h3><singleline>This is the subheader</singleline></h3>
+          <multiline>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex numquam a in explicabo <a href="https://www.nebolodge.com">totam optio sint, accusamus, quam commodi</a> aliquid nesciunt nam perferendis error, quisquam sapiente! Ducimus reiciendis veritatis eligendi.</multiline>
+        </columns>
+      </row>
+    </container>
+  </layout>
+  <!-- END Layout #1 -->
+  <!-- Layout #2 -->
+  <layout label="Text with image">
+    <container>
+      <row>
+        <columns small="12" large="6" class="image-wrapper">
+          <img editable label="Inline image: 580px wide" src="{{root}}assets/img/beer.jpg" width="290" alt="A pint of beer at North Haven Brewing Company" class="">
+          <span class="caption"><singleline>A pint of beer at North Haven Brewing Co.</singleline></span>
+        </columns>
+        <columns small="12" large="6">
+          <multiline>
+            And while you’re at the Hall, don’t forget to stop in at <a href="http://www.northhavenbrewing.com">North Haven Brewing Company</a>. They have new varieties and old favorites already on tap. It’s a perfect place to relax with a pint on a late spring afternoon.
+          </multiline>
+        </columns>
+      </row>
+      <row>
+        <columns small="12">
+          <multiline>
+            Even in our little island town, there’s too much to do in just one night—so make a weekend of it! With <a href="https://www.nebolodge.com/rooms">a few rooms still available for Memorial Day weekend</a> and in June, you can come experience it for yourself before the summer rush gets here.
+          </multiline>
+
+          <center>
+            <spacer size="16"></spacer>
+            <button class="large radius" href="https://www.nebolodge.com/rooms/"><singleline>Pick out your room!</singleline></button>
+          </center>
+        </columns>
+      </row>
+    </container>
+  </layout>
+  <!-- END Layout #2 -->
+</repeater>
+<!-- END content blocks -->
+
+<!-- Divider block -->
+<repeater>
+  <container>
+      <row>
+        <columns small="12">
+          <!-- <spacer size="16"></spacer> -->
+          <center>
+            <img editable src="{{root}}assets/img/Nebo_logo_divider@2x.png" alt="================" class="divider-image" width="89" label="Divider image: DO NOT MODIFY">
+          </center>
+          <!-- <spacer size="16"></spacer> -->
+        </columns>
+      </row>
+  </container>
+</repeater>
+<!-- END Divider block -->
 
 <container>
-  <row>
-    <columns>
-      <p>See more details—and pick out a room—<a href="https://www.nebolodge.com/">on our website</a>.</p>
-      <p>We’ll see you soon!</p>
-    </columns>
-  </row>
-</container>
-
-<container>
-    <row>
-      <columns small="12">
-        <!-- <spacer size="16"></spacer> -->
-        <center>
-          <img src="{{root}}assets/img/Nebo_logo_divider.png" alt="================" class="divider-image">
-        </center>
-        <!-- <spacer size="16"></spacer> -->
-      </columns>
-    </row>
-</container>
-
-<container>
-  <row>
-    <columns small="12" large="6">
-      <img src="{{root}}assets/img/beer.jpg" width="580" alt="A pint of beer at North Haven Brewing Company" class="">
-    </columns>
-    <columns small="12" large="6">
-      <p>And while you’re at the Hall, don’t forget to stop in at <a href="http://www.northhavenbrewing.com">North Haven Brewing Company</a>. They have new varieties and old favorites already on tap. It’s a perfect place to relax with a pint on a late spring afternoon.</p>
-    </columns>
-  </row>
   <row>
     <columns small="12">
-      <p>Even in our little island town, there’s too much to do in just one night—so make a weekend of it! With <a href="https://www.nebolodge.com/rooms">a few rooms still available for Memorial Day weekend</a> and in June, you can come experience it for yourself before the summer rush gets here.</p>
-
-      <center>
-        <spacer size="16"></spacer>
-        <button class="large radius" href="https://www.nebolodge.com/rooms/">Pick out your room!</button>
-      </center>
+      <h3>Want more news from North Haven?</h3>
+      <p>Don’t forget to <a href="https://www.instagram.com/nebolodge/">follow us on Instagram</a>, <a href="https://twitter.com/nebolodge">Twitter</a>, and Facebook:</p>
     </columns>
   </row>
-</container>
-<container>
   <row>
     <columns small="4" >
       <p><a href="https://www.instagram.com/nebolodge/">
