@@ -107,6 +107,20 @@
 	width: 60px !important;
 }
 
+/* Image block and caption styles*/
+.image-wrapper {
+	position: relative;
+	img {
+		width: 290px !important;
+	}
+}
+
+.caption {
+	font-size: .8rem;
+	color: $dark-gray;
+	font-style: italic;
+}
+
 /* FOOTER STYLES */
 .footer {
 	background: $white;
